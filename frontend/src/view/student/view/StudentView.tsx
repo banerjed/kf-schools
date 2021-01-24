@@ -52,6 +52,11 @@ function StudentView(props) {
         />
 
         <TextViewItem
+          label={i18n('entities.student.fields.officialSchoolName')}
+          value={record.officialSchoolName}
+        />
+
+        <TextViewItem
           label={i18n('entities.student.fields.gender')}
           value={
             record.gender &&

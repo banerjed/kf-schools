@@ -37,6 +37,10 @@ export default [
     render: exporterRenders.relationToOne(),
   },
   {
+    name: 'officialSchoolName',
+    label: i18n('entities.student.fields.officialSchoolName'),
+  },
+  {
     name: 'gender',
     label: i18n('entities.student.fields.gender'),
   },

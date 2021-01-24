@@ -52,7 +52,7 @@ export default function (sequelize) {
       principalsName: {
         type: DataTypes.STRING(100),
         validate: {
-          len: [10, 100],
+          len: [5, 100],
         }
       },
       principalsEmail: {
@@ -70,7 +70,7 @@ export default function (sequelize) {
       vicePrincipalsName: {
         type: DataTypes.STRING(100),
         validate: {
-          len: [10, 100],
+          len: [5, 100],
         }
       },
       vicePrincipalsEmail: {

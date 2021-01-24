@@ -18,6 +18,8 @@ const sectionEnumerators = {
     'Class_12',
     'Evening',
     'Computer',
+    'ManyGrades',
+    'Other',
   ],
 };
 

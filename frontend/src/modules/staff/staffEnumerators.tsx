@@ -24,7 +24,7 @@ const staffEnumerators = {
     'Ground Staff',
     'Electrician',
     'Gatekeeper',
-    'Coordinator'
+    'Coordinator',
   ],
   gender: [
     'Male',
@@ -36,15 +36,6 @@ const staffEnumerators = {
     'Divorced',
     'Widowed',
     'Spinster',
-  ],
-  educationalQualifications: [
-    'HighSchool',
-    'Matriculate',
-    'Diploma',
-    'BEd',
-    'DegreeCollege',
-    'PostGraduate',
-    'Other',
   ],
 };
 

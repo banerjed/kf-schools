@@ -34,7 +34,9 @@ export default function (sequelize) {
           "Class_11",
           "Class_12",
           "Evening",
-          "Computer"
+          "Computer",
+          "ManyGrades",
+          "Other"
         ],
       },
       sectionName: {

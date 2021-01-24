@@ -152,16 +152,7 @@ export default function (sequelize) {
         },
       },
       educationalQualifications: {
-        type: DataTypes.ENUM,
-        values: [
-          "HighSchool",
-          "Matriculate",
-          "Diploma",
-          "BEd",
-          "DegreeCollege",
-          "PostGraduate",
-          "Other"
-        ],
+        type: DataTypes.STRING(255),
       },
       priorExperience: {
         type: DataTypes.TEXT,

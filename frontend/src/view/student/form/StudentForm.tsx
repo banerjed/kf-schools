@@ -71,6 +71,10 @@ const schema = yup.object().shape({
       "required": true
     },
   ),
+  officialSchoolName: yupFormSchemas.string(
+    i18n('entities.student.fields.officialSchoolName'),
+    {},
+  ),
   gender: yupFormSchemas.enumerator(
     i18n('entities.student.fields.gender'),
     {
@@ -132,6 +136,7 @@ function StudentForm(props) {
       lastName: record.lastName,
       fullName: record.fullName,
       school: record.school,
+      officialSchoolName: record.officialSchoolName,
       gender: record.gender,
       dateOfBirth: record.dateOfBirth ? moment(record.dateOfBirth, 'YYYY-MM-DD') : null,
       dateOfJoin: record.dateOfJoin ? moment(record.dateOfJoin, 'YYYY-MM-DD') : null,
@@ -218,6 +223,13 @@ function StudentForm(props) {
                 label={i18n('entities.student.fields.school')}
                 required={true}
                 showCreate={!props.modal}
+              />
+            </Grid>
+            <Grid item lg={7} md={8} sm={12} xs={12}>
+              <InputFormItem
+                name="officialSchoolName"
+                label={i18n('entities.student.fields.officialSchoolName')}  
+                required={false}
               />
             </Grid>
             <Grid item lg={7} md={8} sm={12} xs={12}>

@@ -46,6 +46,9 @@ export default function (sequelize) {
       fullName: {
         type: DataTypes.TEXT,
       },
+      officialSchoolName: {
+        type: DataTypes.STRING(255),
+      },
       gender: {
         type: DataTypes.ENUM,
         allowNull: false,

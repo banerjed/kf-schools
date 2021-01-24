@@ -182,10 +182,10 @@ export default [
   {
     name: 'educationalQualifications',
     label: i18n('entities.staff.fields.educationalQualifications'),
-    schema: schemas.enumerator(
+    schema: schemas.string(
       i18n('entities.staff.fields.educationalQualifications'),
       {
-        "options": staffEnumerators.educationalQualifications
+        "max": 255
       },
     ),
   },

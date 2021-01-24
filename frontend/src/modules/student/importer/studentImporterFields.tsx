@@ -76,6 +76,16 @@ export default [
     ),
   },
   {
+    name: 'officialSchoolName',
+    label: i18n('entities.student.fields.officialSchoolName'),
+    schema: schemas.string(
+      i18n('entities.student.fields.officialSchoolName'),
+      {
+        "max": 255
+      },
+    ),
+  },
+  {
     name: 'gender',
     label: i18n('entities.student.fields.gender'),
     schema: schemas.enumerator(

@@ -125,12 +125,7 @@ function StaffView(props) {
 
         <TextViewItem
           label={i18n('entities.staff.fields.educationalQualifications')}
-          value={
-            record.educationalQualifications &&
-            i18n(
-              `entities.staff.enumerators.educationalQualifications.${record.educationalQualifications}`,
-            )
-          }
+          value={record.educationalQualifications}
         />
 
         <TextViewItem

@@ -127,11 +127,9 @@ const schema = yup.object().shape({
     i18n('entities.staff.fields.dateOfTermination'),
     {},
   ),
-  educationalQualifications: yupFormSchemas.enumerator(
+  educationalQualifications: yupFormSchemas.string(
     i18n('entities.staff.fields.educationalQualifications'),
-    {
-      "options": staffEnumerators.educationalQualifications
-    },
+    {},
   ),
   priorExperience: yupFormSchemas.string(
     i18n('entities.staff.fields.priorExperience'),
@@ -364,17 +362,9 @@ function StaffForm(props) {
               />
             </Grid>
             <Grid item lg={7} md={8} sm={12} xs={12}>
-              <SelectFormItem
+              <InputFormItem
                 name="educationalQualifications"
-                label={i18n('entities.staff.fields.educationalQualifications')}
-                options={staffEnumerators.educationalQualifications.map(
-                  (value) => ({
-                    value,
-                    label: i18n(
-                      `entities.staff.enumerators.educationalQualifications.${value}`,
-                    ),
-                  }),
-                )}
+                label={i18n('entities.staff.fields.educationalQualifications')}  
                 required={false}
               />
             </Grid>
