@@ -120,7 +120,7 @@ export default [
     schema: schemas.relationToOne(
       i18n('entities.student.fields.household'),
       {
-        "required": true
+        // "required": true
       },
     ),
   },
