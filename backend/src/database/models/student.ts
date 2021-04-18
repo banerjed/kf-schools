@@ -31,10 +31,6 @@ export default function (sequelize) {
       },
       middleName: {
         type: DataTypes.STRING(50),
-        allowNull: true,
-        validate: {
-          len: [2, 50],
-        }
       },
       lastName: {
         type: DataTypes.STRING(50),
